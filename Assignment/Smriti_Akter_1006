@@ -1,0 +1,36 @@
+def analyze_name():
+    full_name = input("Enter your full name: ")
+    print("\nFull Name:", full_name)
+
+    # 1. Count vowels and consonants
+    vowels_set = set("aeiouAEIOU")
+    vowels = sum(1 for c in full_name if c.isalpha() and c in vowels_set)
+    consonants = sum(1 for c in full_name if c.isalpha() and c not in vowels_set)
+    print("Vowels:", vowels, ", Consonants:", consonants)
+
+    # 2. ASCII values of each character
+    ascii_values = [ord(c) for c in full_name]
+    print("ASCII Values:", ascii_values)
+
+    # 3. Reversed version of the name
+    reversed_name = full_name[::-1]
+    print("Reversed Name:", reversed_name)
+
+    # 4. Check if the name is a palindrome (ignore case and spaces)
+    cleaned_name = ''.join(c.lower() for c in full_name if c.isalnum())
+    is_palindrome = cleaned_name == cleaned_name[::-1]
+    print("Is Palindrome:", is_palindrome)
+
+    # 5. Unique letters sorted alphabetically
+    unique_letters = sorted(set(c for c in full_name if c.isalpha()))
+    print("Unique Letters (sorted):", unique_letters)
+
+    # 6. First non-repeating character
+    from collections import Counter
+    counter = Counter(c for c in full_name if c != ' ')
+    non_repeating = next((c for c in full_name if counter[c] == 1 and c != ' '), None)
+    print("First Non-Repeating Character:", non_repeating)
+
+# Call the function
+analyze_name()
+
