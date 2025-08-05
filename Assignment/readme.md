@@ -14,7 +14,7 @@ This Python script takes a user's full name as input and performs multiple strin
 2. Run the script in a terminal or Python environment:
 
 ```bash
-python bristy_mandal_1021.py
+python smriti_akter_1006.py
 ```
 
 3. Enter your full name when prompted.
@@ -22,18 +22,18 @@ python bristy_mandal_1021.py
 ## Example Output
 
 ```
-Enter your full name: Bristy Mandal
+Enter your full name: Smriti Akter
 
-Full Name: Bristy Mandal
-Vowels: 3 , Consonants: 9
-ASCII Values: [66, 114, 105, 115, 116, 121, 32, 77, 97, 110, 100, 97, 108]
-Reversed Name: ladnaM ytsirB
+Full Name: Smriti Akter
+Vowels: 4 , Consonants: 7
+ASCII Values: [83, 109, 114, 105, 116, 105, 32, 65, 107, 116, 101, 114]
+Reversed Name: retkA itirmS
 Is Palindrome: False
-Unique Letters (sorted): ['B', 'M', 'a', 'd', 'i', 'l', 'n', 'r', 's', 't', 'y']
-First Non-Repeating Character: B
-
+Unique Letters (sorted): ['A', 'S', 'e', 'i', 'k', 'm', 'r', 't']
+First Non-Repeating Character: S
 ## Requirements
 - Python 3.x
 - No external libraries needed (uses built-in `collections`)
 
 ---
+
